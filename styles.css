@@ -1,0 +1,66 @@
+/*.__my_injection_div__ {
+ all: unset !important;
+}*/
+/*.__my_injection_div__ {
+ all: initial !important;
+}*/
+
+
+.__my_injection_div__* {
+ all : revert !important;
+}
+
+.__my_injection_div__ {
+ margin      : 0;
+ padding     : 5px;
+ box-sizing  : border-box;
+ box-shadow  : black;
+ border      : 1px solid black;
+ color       : black;
+ background  : white;
+ font-size   : 1rem;
+ font-family : sans-serif;
+ font-weight : bolder;
+ /*!!! line-height - is very important parameter !!!*/
+ line-height : normal;
+ position    : fixed;
+ top         : 5px;
+ right       : 5px;
+ z-index     : 200000;
+ width       : 400px;
+}
+
+/********************/
+/*****  COMMON  *****/
+/********************/
+.hidden {
+ display : none;
+}
+
+/********************/
+/*****  WIDGET  *****/
+/********************/
+
+.wg-gb-calc__form-row {
+ box-sizing      : border-box;
+ display         : flex;
+ justify-content : space-between;
+ align-items     : stretch;
+ align-content   : stretch;
+}
+
+.gb-calc__number, .gb-calc__select, gb-calc__check {
+ min-width     : 50px;
+ flex-grow     : 1;
+ /*border        : none;*/
+ /*border-bottom : 1px solid black;*/
+}
+
+.gb-calc__select {
+ flex-grow : 4;
+ min-width : 100px;
+}
+
+.gb-calc__label {
+ padding : 3px;
+}

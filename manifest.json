@@ -1,0 +1,45 @@
+{
+  "name": "FoE_GB_Calc",
+  "version": "0.0.1",
+  "manifest_version": 2,
+//  "default_local": "en",
+  "description": "FoE GB helper calculator",
+  "icons": {
+    "16": "img/icon_16.png",
+    "48": "img/icon_48.png",
+    "128": "img/icon_128.png"
+  },
+  "background": {
+    "scripts": [
+      "background.js"
+    ],
+    "persistent": true
+  },
+  "browser_action": {
+    "default_icon": "img/icon_16.png",
+    "default_title": "FoE GB calculator"
+  },
+  "permissions": [
+    "background",
+    "displaySource",
+    "alarms",
+    "activeTab",
+    "storage",
+    "tabs",
+    "notifications",
+    "clipboardWrite",
+    "management",
+    "activeTab"
+  ],
+  "web_accessible_resources": [
+    "/inject.js",
+    "css/*.css",
+    "/styles.css"
+  ],
+  "externally_connectable": {
+    //    "matches": ["https://*.forgeofempires.com/*"],
+    "ids": [
+      "*"
+    ]
+  }
+}
