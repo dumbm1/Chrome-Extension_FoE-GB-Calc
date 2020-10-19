@@ -1,15 +1,3 @@
-/*.__my_injection_div__ {
- all: unset !important;
-}*/
-/*.__my_injection_div__ {
- all: initial !important;
-}*/
-
-
-.__my_injection_div__* {
- all : revert !important;
-}
-
 .__my_injection_div__ {
  margin      : 0;
  padding     : 5px;
@@ -21,11 +9,10 @@
  font-size   : 1rem;
  font-family : sans-serif;
  font-weight : bolder;
- /*!!! line-height - is very important parameter !!!*/
  line-height : normal;
  position    : fixed;
- top         : 5px;
- right       : 5px;
+ top         : 40px;
+ right       : 65px;
  z-index     : 200000;
  width       : 400px;
 }
@@ -52,8 +39,8 @@
 .gb-calc__number, .gb-calc__select, gb-calc__check {
  min-width     : 50px;
  flex-grow     : 1;
- /*border        : none;*/
- /*border-bottom : 1px solid black;*/
+ border        : none;
+ border-bottom : 1px solid black;
 }
 
 .gb-calc__select {
